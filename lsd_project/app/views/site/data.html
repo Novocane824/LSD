@@ -1,0 +1,23 @@
+<h1>Data</h1>
+<form id="add-data" action="/restaurants" method="post">
+  <select name="category" id="category">
+  <option value="" selected="selected">Please select Category</option>
+    <option value="Western">Western</option>
+    <option value="Chinese">Chinese</option>
+    <option value="Thai">Thai</option>
+    <option value="Middle-Eastern">Middle-eastern</option>
+  </select>
+  <select name="location" id="">
+  <option value="" selected="selected">Please select Location</option>
+    <option value="Causeway Bay">Causeway Bay</option>
+    <option value="Wan Chai">Wan Chai</option>
+    <option value="Admiralty">Admiralty</option>
+    <option value="Central">Central</option>
+    <option value="Sheung Wan">Sheung Wan</option>
+  </select>
+  <input type="text" name="name" placeholder="Name">
+  <input type="text" name="price" placeholder="Price">
+  <input type="submit" value="Submit">
+</form>
+
+<a href="/data/list">Modify List</a>

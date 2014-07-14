@@ -1,0 +1,19 @@
+<h1>Restaurants</h1>
+
+<table style="width:900px">
+  <tr>
+    <th>Category</th>
+    <th>Location</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+<% @restaurants.each do |t| %>
+  <tr>
+    <td><%= t.category %></td>
+    <td><%= t.location %></td>
+    <td><%= t.name %></td>
+    <td><%= t.price %></td>
+    <td><%= link_to "Delete", "/restaurants/#{t.id}", method: :delete %></td>
+  </tr>
+<% end %>
+</table>
