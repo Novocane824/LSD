@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140711073116) do
+ActiveRecord::Schema.define(version: 20140714072003) do
 
   create_table "contacts", force: true do |t|
     t.string   "email"
@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20140711073116) do
 
   create_table "distances", force: true do |t|
     t.integer  "posid"
-    t.string   "from"
-    t.string   "to"
-    t.float    "time"
+    t.string   "fromW"
+    t.string   "toW"
+    t.float    "Wtime"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20140711073116) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

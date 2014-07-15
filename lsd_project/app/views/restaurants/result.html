@@ -1,0 +1,25 @@
+<h1>Result</h1>
+
+<div class="deliverytime">
+  <h2>Delivery Time</h2>
+  Preparation and delivery will take approx. <%= @result.Wtime %>mins
+</div>
+
+<div>
+  <table style="width:900px">
+      <tr>
+        <th>Category</th>
+        <th>Location</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    <% @restaurant.each do |t| %>
+      <tr>
+        <td><%= t.category %></td>
+        <td><%= t.location %></td>
+        <td><%= t.name %></td>
+        <td><%= t.price %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
