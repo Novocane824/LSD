@@ -4,8 +4,94 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@font-face {
+  font-family: "Dream Orphans";
+  src: url(dreamorp.ttf)
+}
 
 h1 {
-  margin-top: 80px;
+  margin-top: 60px;
+  font-family: "Dream Orphans";
+  font-size: 60px;
   text-align: center;
+}
+
+body {
+  padding-top: 85px;
+  font-family: "Dream Orphans";
+  font-size: 25px;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: "Dream Orphans";
+  font-size: 40px;
+}
+
+table,th,td {
+  border:1px solid black;
+}
+
+td,th {
+  padding: 10px;
+}
+
+td {
+  color: gray;
+}
+
+#carousel-example-generic {
+  width: 100%;
+  max-height: 400px !important;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-height: 400px !important;
+}
+
+#criterea {
+  text-align: center;
+  padding: 20px;
+  font-family: "Dream Orphans";
+  }
+.bar {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50px;
+  width: 170px;
+  font-size: 30px;
+  }
+.mainButton {
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  font-size: 30px;
+  }
+
+.box {
+  display: block;
+  margin: 10px;
+}
+
+.dropbox {
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50px;
+  width: 300px;
+  margin: 10px;
+}
+
+.submit {
+  margin: 10px;
+}
+
+#modlist {
+  margin-left: 600px;
+}
+
+.navbar-nav > li {
+  margin-top: 10px;
 }

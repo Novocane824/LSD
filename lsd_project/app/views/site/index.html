@@ -1,7 +1,35 @@
-<h1>LSD</h1>
+<h1>~ Lucky Strike Delivery ~</h1>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide" src="http://i.imgur.com/QEmvahu.jpg">
+    </div>
+    <div class="item">
+      <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide" src="http://i.imgur.com/rGQZuGs.jpg">
+    </div>
+    <div class="item">
+      <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide" src="http://i.imgur.com/qo65oSR.jpg">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<h2>Simple  |  Easy  |  On Time</h2>
+
 <form id='criterea' action='/result' method='post'>
-  <select name="origin" id="location-origin">
-    <option value="" selected="selected">Ordering from...</option>
+  <select name="origin" class="bar">
+    <option value="" selected="selected">I'm in ...</option>
     <option value="Causeway Bay">Causeway Bay</option>
     <option value="Wan Chai">Wan Chai</option>
     <option value="Admiralty">Admiralty</option>
@@ -9,9 +37,8 @@
     <option value="Sheung Wan">Sheung Wan</option>
   </select>
 
-  <select name="location" id="location">
+  <select name="location" class="bar">
     <option value="" selected="selected">Restuarant Location</option>
-    <option value="Any">Any</option>
     <option value="Causeway Bay">Causeway Bay</option>
     <option value="Wan Chai">Wan Chai</option>
     <option value="Admiralty">Admiralty</option>
@@ -19,13 +46,13 @@
     <option value="Sheung Wan">Sheung Wan</option>
   </select>
 
-  <select name="date" id="date">
+  <select name="date" class="bar">
     <option value="" selected="selected">Date</option>
     <option value="Today">Today</option>
     <option value="Tomorrow">Tomorrow</option>
   </select>
 
-  <select name="time" id="time">
+  <select name="time" class="bar">
     <option value="" selected="selected">Time</option>
     <option value="ASAP">ASAP</option>
     <option value="12pm">12pm</option>
@@ -43,3 +70,7 @@
 
   <input type="submit" value="Go" class="mainButton"/>
 </form>
+
+<script type="text/javascript">
+  $('.carousel').carousel()
+</script>

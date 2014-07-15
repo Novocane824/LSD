@@ -1,42 +1,50 @@
 <h1>Data</h1>
-<form id="add-data" action="/restaurants" method="post">
-  <select name="category" id="category">
-  <option value="" selected="selected">Please select Category</option>
-    <option value="Western">Western</option>
-    <option value="Chinese">Chinese</option>
-    <option value="Thai">Thai</option>
-    <option value="Middle-Eastern">Middle-eastern</option>
-  </select>
-  <select name="location" id="">
-  <option value="" selected="selected">Please select Location</option>
-    <option value="Causeway Bay">Causeway Bay</option>
-    <option value="Wan Chai">Wan Chai</option>
-    <option value="Admiralty">Admiralty</option>
-    <option value="Central">Central</option>
-    <option value="Sheung Wan">Sheung Wan</option>
-  </select>
-  <input type="text" name="name" placeholder="Name">
-  <input type="text" name="price" placeholder="Price">
-  <input type="submit" value="Submit">
-</form>
+<h2>Data Entry (Restaurants)</h2>
+<div align="center">
+  <form id="add-data" action="/restaurants" method="post">
+    <select class="dropbox" name="category" id="category">
+    <option value="" selected="selected">Please select Category</option>
+      <option value="Western">Western</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Thai">Thai</option>
+      <option value="Middle-Eastern">Middle-eastern</option>
+    </select>
+    <select class="dropbox" name="location" id="">
+      <option value="" selected="selected">Please select Location</option>
+      <option value="Causeway Bay">Causeway Bay</option>
+      <option value="Wan Chai">Wan Chai</option>
+      <option value="Admiralty">Admiralty</option>
+      <option value="Central">Central</option>
+      <option value="Sheung Wan">Sheung Wan</option>
+    </select>
+    <input class="box" type="text" name="name" placeholder="Name">
+    <input class="box" type="text" name="price" placeholder="Price">
+    <input class="submit" type="submit" value="Submit">
+  </form>
+</div>
 
-<form id="dt" action="/data/time" method="post">
-  <select name="from" id="from">
-    <option value="Causeway Bay">Causeway Bay</option>
-    <option value="Wan Chai">Wan Chai</option>
-    <option value="Admiralty">Admiralty</option>
-    <option value="Central">Central</option>
-    <option value="Sheung Wan">Sheung Wan</option>
-  </select>
-  <select name="to" id="to">
-    <option value="Causeway Bay">Causeway Bay</option>
-    <option value="Wan Chai">Wan Chai</option>
-    <option value="Admiralty">Admiralty</option>
-    <option value="Central">Central</option>
-    <option value="Sheung Wan">Sheung Wan</option>
-  </select>
-  <input type="text" name="time" placeholder="time">
-  <input type="submit" value="Submit">
-</form>
+<h2>Data Entry (Time)</h2>
+<div align="center">
+  <form id="dt" action="/data/time" method="post">
+    <select class="dropbox" name="from" id="from">
+      <option value="" selected="selected">From...</option>
+      <option value="Causeway Bay">Causeway Bay</option>
+      <option value="Wan Chai">Wan Chai</option>
+      <option value="Admiralty">Admiralty</option>
+      <option value="Central">Central</option>
+      <option value="Sheung Wan">Sheung Wan</option>
+    </select>
+    <select class="dropbox" name="to" id="to">
+    <option value="" selected="selected">To...</option>
+      <option value="Causeway Bay">Causeway Bay</option>
+      <option value="Wan Chai">Wan Chai</option>
+      <option value="Admiralty">Admiralty</option>
+      <option value="Central">Central</option>
+      <option value="Sheung Wan">Sheung Wan</option>
+    </select>
+    <input class="box" type="text" name="time" placeholder="Time">
+    <input class="submit" type="submit" value="Submit">
+  </form>
+</div>
 
-<a href="/data/list">Modify List</a>
+<a href="/data/list" id="modlist">Modify List</a>

@@ -31,6 +31,7 @@ class RestaurantsController < ApplicationController
     puts "\n\n\n\n\n\n"
     puts params
     puts "\n\n\n\n\n\n"
+
     @result = Distance.where("fromW = ? and toW = ?", params[:origin], params[:location]).take
     @restaurant = Restaurant.where("location = ?", params[:location])
 
