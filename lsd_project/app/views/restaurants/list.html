@@ -13,7 +13,10 @@
     <td><%= t.location %></td>
     <td><%= t.name %></td>
     <td><%= t.price %></td>
+    <td><%= link_to "Menu", "/restaurants/#{t.id}"%></td>
+    <% if current_user && current_user.is_admin? %>
     <td><%= link_to "Delete", "/restaurants/#{t.id}", method: :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

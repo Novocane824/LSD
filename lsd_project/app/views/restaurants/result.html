@@ -2,7 +2,7 @@
 
 <div class="deliverytime" align="center">
   <h2>Delivery Time</h2>
-  Preparation and delivery will take approx. <%= @result.Wtime %>mins
+  Preparation and delivery will take approx. <strong class="strongtxt"><%= @result.Wtime %></strong>mins after order.
 </div>
 
 <div>
@@ -19,6 +19,7 @@
         <td><%= t.location %></td>
         <td><%= t.name %></td>
         <td><%= t.price %></td>
+        <td><%= link_to "Menu" %></td>
       </tr>
     <% end %>
   </table>

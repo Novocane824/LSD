@@ -24,7 +24,9 @@
           <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/">Home</a></li>
           <li class="<%= 'active' if params[:controller] == 'controller2' %>"><a href="/restaurants">Restaurants</a></li>
           <li class="<%= 'active' if params[:controller] == 'controller3' %>"><a href="/contact">Contact</a></li>
+          <% if current_user && current_user.is_admin? %>
           <li class="<%= 'active' if params[:controller] == 'controller4' %>"><a href="/data">Data</a></li>
+          <% end %>
         </ul>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
           <li class="active" role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>

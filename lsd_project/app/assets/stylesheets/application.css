@@ -88,8 +88,20 @@ td {
   margin: 10px;
 }
 
+.edit {
+  margin-left: 20px;
+}
+
 #modlist {
   margin-left: 600px;
+}
+
+.deliverytime {
+  color: #c03b3a;
+}
+
+.strongtxt {
+  font-size: 60px;
 }
 
 .navbar-nav > li {

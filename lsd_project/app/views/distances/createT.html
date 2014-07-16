@@ -1,6 +1,6 @@
 <h1>Time</h1>
 
-<table style="width:900px">
+<table style="width:900px" align="center">
   <tr>
     <th>From</th>
     <th>To</th>
@@ -8,9 +8,9 @@
   </tr>
 <% @distances.each do |t| %>
   <tr>
-    <td><%= t.from %></td>
-    <td><%= t.to %></td>
-    <td><%= t.time %></td>
+    <td><%= t.fromW %></td>
+    <td><%= t.toW %></td>
+    <td><%= t.Wtime %></td>
     <td><%= link_to "Delete", "/data/time/#{t.id}", method: :delete %></td>
   </tr>
 <% end %>
