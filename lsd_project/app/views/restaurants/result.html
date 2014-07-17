@@ -19,7 +19,7 @@
         <td><%= t.location %></td>
         <td><%= t.name %></td>
         <td><%= t.price %></td>
-        <td><%= link_to "Menu" %></td>
+        <td><%= link_to "menu", "/restaurants/#{t.id}" %></td>
       </tr>
     <% end %>
   </table>

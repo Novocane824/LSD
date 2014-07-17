@@ -1,0 +1,24 @@
+<h1>Restaurant Profile</h1>
+
+<div>
+  Name : <%= @restaurant.name %>
+</div>
+
+<div>
+  Location : <%= @restaurant.location %>
+</div>
+
+<div>
+  Category : <%= @restaurant.category %>
+</div>
+
+<div>
+  Price : <%= @restaurant.price %>
+</div>
+
+<div>
+  Image : <%= image_tag @restaurant.avatar.url(:medium) %>
+</div>
+
+<%= link_to "Edit", "/restaurants/#{@restaurant.id}/edit" %>
+<%= link_to "Menu Edit", "/restaurants/#{@restaurant.id}/menu" %>

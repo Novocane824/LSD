@@ -1,0 +1,22 @@
+<h1>Edit</h1>
+<div align="center">
+  <%= form_for :restaurant, :url => "/restaurants/#{@restaurant.id}", :html => { :multipart => true } do |form| %>
+    <select class="dropbox" name="category" id="category">
+      <option value="Western" <%= 'selected="selected"' if @restaurant.category == "Western" %>>Western</option>
+      <option value="Chinese" <%= 'selected="selected"' if @restaurant.category == "Chinese" %>>Chinese</option>
+      <option value="Thai" <%= 'selected="selected"' if @restaurant.category == "Thai" %>>Thai</option>
+      <option value="Middle-Eastern" <%= 'selected="selected"' if @restaurant.category == "Middle-Eastern" %>>Middle-Eastern</option>
+    </select>
+    <select class="dropbox" name="location" id="">
+      <option value="Causeway Bay" <%= 'selected="selected"' if @restaurant.location == "Causeway Bay" %>>Causeway Bay</option>
+      <option value="Wan Chai" <%= 'selected="selected"' if @restaurant.location == "Wan Chai" %>>Wan Chai</option>
+      <option value="Admiralty" <%= 'selected="selected"' if @restaurant.location == "Admiralty" %>>Admiralty</option>
+      <option value="Central" <%= 'selected="selected"' if @restaurant.location == "Central" %>>Central</option>
+      <option value="Sheung Wan" <%= 'selected="selected"' if @restaurant.location == "Sheung Wan" %>>Sheung Wan</option>
+    </select>
+    <input class="box" type="text" name="name" placeholder="Name" value="<%= @restaurant.name %>">
+    <input class="box" type="text" name="price" placeholder="Price" value="<%= @restaurant.price %>">
+    <%= form.file_field :avatar %>
+    <input class="submit" type="submit" value="Submit">
+  <% end %>
+</div>

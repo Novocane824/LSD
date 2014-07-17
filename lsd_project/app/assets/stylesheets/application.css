@@ -96,6 +96,12 @@ td {
   margin-left: 600px;
 }
 
+#restaurant_avatar {
+  position: center;
+  padding-top: 20px;
+  margin-left: 250px;
+}
+
 .deliverytime {
   color: #c03b3a;
 }

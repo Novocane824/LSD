@@ -18,8 +18,15 @@ delete 'data/time/:id' => 'distances#destroy'
 post 'restaurants' => 'restaurants#create'
 get 'restaurants' => 'restaurants#list'
 delete 'restaurants/:id' => 'restaurants#destroy'
+get 'restaurants/:id' => 'restaurants#show'
 
-post '/result' => 'restaurants#search'
+get 'restaurants/:id/edit' => 'restaurants#edit'
+patch 'restaurants/:id' => 'restaurants#update'
 
+post 'result' => 'restaurants#search'
+
+# get 'restaurants/:id' => 'menuitems#showmenu'
+# get 'restaurants/:id/menu' => 'menuitems#createmenu'
+# post 'restaurants/:id/menu' => 'menuitems#createmenu'
 
 end
